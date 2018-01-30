@@ -1,0 +1,83 @@
+body{
+    background: lightblue;
+    margin: 0;
+}
+.cvanderland{
+    width: 1024px;
+    height: 243px;
+    background-image: url('../imagenes/background.png');
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+.cvander{
+    /*background: red;*/
+    width: 166px;
+    height: 171px;
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    overflow: hidden;
+    transition: .3s;
+    /*animation: tiempo nombre de animacion;*/
+    
+    
+}
+.cvander:hover{
+   /*
+    -webkit-box-shadow: 0px 0px 212px 45px rgba(16,53,163,1);
+    -moz-box-shadow: 0px 0px 212px 45px rgba(12, 35, 141, 0);
+    box-shadow: 0px 0px 212px 45px rgba(16,53,163,1);
+   */
+    
+}
+.cvander:hover .cvander-head{
+    /*border: 10px solid red;*/
+    animation: .5s cvander infinite;
+    /*transform: translateY(5px);*/
+}
+.cvander:hover .cvander-ipad{
+    transform: rotate(-10deg);
+}
+.cvander-body{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+}
+.cvander-head{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+.cvander-ipad{
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    transition: .2s;
+}
+@keyframes cvander {
+    /*0% -50% -100%*/
+    /*from to*/
+    /*from{
+        border: 1px solid red;
+    }to{
+        transform: translateY(5px);
+    }*/
+    50%{
+        transform: translateY(5px) rotate(2deg);
+    }100%{
+        transform: translateY(0px);
+    }
+
+}
